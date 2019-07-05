@@ -11,6 +11,7 @@ export class UsersComponent implements OnInit {
     firstName: '',
     lastName: '',
     age: null,
+    email: '',
     address: {
       street: '',
       city: '',
@@ -34,6 +35,7 @@ export class UsersComponent implements OnInit {
         firstName: 'Hamza',
         lastName: 'Abousaid',
         age: 94,
+        email: 'mizo@gmail.com',
         address: {
           street: '50 Main st',
           city: 'Boston',
@@ -47,6 +49,7 @@ export class UsersComponent implements OnInit {
         firstName: 'Meryem',
         lastName: 'Hajar',
         age: 18,
+        email: 'mery@gmail.com',
         address: {
           street: '50 Main st',
           city: 'Boston',
@@ -60,6 +63,7 @@ export class UsersComponent implements OnInit {
         firstName: 'papi',
         lastName: 'Abousaid',
         age: 62,
+        email: 'papi@gmail.com',
         address: {
           street: 'wlad sidi chenane',
           city: 'Settat',
@@ -85,6 +89,7 @@ export class UsersComponent implements OnInit {
       firstName: '',
       lastName: '',
       age: null,
+      email: '',
       address: {
         street: '',
         city: '',
@@ -93,15 +98,15 @@ export class UsersComponent implements OnInit {
     }
   }
 
-  addUser() {
-    this.user.isActive = true;
-    this.user.registered = new Date();
-    this.users.unshift(this.user);
+  // addUser() {
+  //   this.user.isActive = true;
+  //   this.user.registered = new Date();
+  //   this.users.unshift(this.user);
 
 
-    this.initUser();
+  //   this.initUser();
 
-  }
+  // }
 
   toggleHide(user: User) {
     user.hide = !user.hide;

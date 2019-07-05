@@ -73,6 +73,7 @@ export class UserComponent implements OnInit {
       firstName: 'Hamza',
       lastName: 'Abousaid',
       age: 24,
+      email: 'mizo@gmail.com',
       address: {
         street: '50 Main st',
         city: 'Boston',
